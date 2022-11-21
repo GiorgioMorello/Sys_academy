@@ -3,7 +3,6 @@ from functions import exibirM, clear_s, add_user, listar_alunos, buscar_aluno, f
 from random import randint
 option = 0
 # O arquivo .JSON deve conter um array vazia antes de executar o arquivo "main.py"
-# RAs: G072CF2, N8199J2, G4819F3, N833416, N6765H1
 
 
 while (option != 5):
@@ -16,7 +15,7 @@ while (option != 5):
         print("Digite apenas números")
 
     if option == 1:
-        # Abrimos o arquivo JSON e pegamos os dados dele e adicionamos em uma variavel
+        # Abriremos o arquivo JSON e pegamos os dados dele e adicionamos em uma variavel
         with open('dados_alunos.json') as f:
             dados = json.load(f)  # a variavel "dados" é uma lista
 
@@ -27,7 +26,7 @@ while (option != 5):
         # Adicionamos na lista os dados que o usuário cadastrou
         dados.append(user)
 
-        # Abrimos o arquivo JSON e adicionamos a variavel "dados" dentro do arquivo JSON
+        # Abriremos o arquivo JSON e adicionamos a variavel "dados" dentro do arquivo JSON
         with open('dados_alunos.json', 'w', encoding='utf8') as file:
             json.dump(dados, file, indent=4, ensure_ascii=True)
 
