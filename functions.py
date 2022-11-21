@@ -2,7 +2,6 @@ import os
 import json
 import pprint
 # O arquivo .JSON deve conter um array vazia antes de executar o arquivo "main.py"
-# RAs: G072CF2, N8199J2, G4819F3, N833416, N6765H1
 
 
 def exibirM():
